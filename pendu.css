@@ -1,0 +1,12 @@
+nav{
+	display: flex;
+	justify-content: space-between;
+}
+
+input#inp1 {
+	width: 20%;
+}
+
+p{
+	font-size: 28px;
+}
