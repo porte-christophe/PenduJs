@@ -3,10 +3,16 @@ let motDeviner = "";
 let listLettreMotDeviner =[];
 let longeur = 0;
 let essais = 0;
+let imagetest = document.getElementById("imgsource");
+let imagecursor = 0;
+let canvas = document.getElementById("canvas");
+let ctx = canvas.getContext("2d");
+
 function resetGame(){
 	document.getElementsByName("motADeviner")["0"].value=null;
 	document.getElementsByName("lettreATester")["0"].value=null;
 	essais = 0;
+	imagecursor = 0;
 	location.reload();
 }
 function initialisation(){
@@ -25,6 +31,8 @@ function initGame(){
 		document.getElementById("afficheMotDeviner").innerText = motDeviner;
 		document.getElementById("jeu").hidden = false;	
 		document.getElementById("initGame").disabled = true;
+		//ctx.drawImage(image,sx,sy,sLargeur,sHauteur,dx,dy,dLargeur,dHauteur);
+		ctx.drawImage(imagetest,imagecursor,0,200,200,0,0,200,200);
 	}else{
 		resetGame();
 	}
@@ -55,7 +63,13 @@ function testerLaLettre(){
 		}
 		document.getElementById("mauvaisesLettres").innerText += lettreATester;
 		essais +=1;
-		if (essais==10) {testVictoire(false);}
+		imagecursor +=200;
+		ctx.drawImage(imagetest,imagecursor,0,200,200,0,0,200,200);
+		if (essais==10) {
+			setTimeout(() => {
+				testVictoire(false);
+			}, 500);
+		}
 		
 	}else{
 		setMotDeviner(lettreATester);

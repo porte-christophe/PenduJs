@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="pendu.css">
 </head>
 <body>
+	<img id="imgsource" src="imagetest.jpg" hidden="true">
 	<header>
 		<nav>
 			<button onclick="resetGame()">Recommencer la partie</button>
@@ -18,6 +19,7 @@
 		<input type="text" id="lat" name="lettreATester" minlength="1" maxlength="1" placeholder="entrer ici la lettre à tester">
 		<button onclick="testerLaLettre()">Tester la lettre</button>
 		<p id="mauvaisesLettres">Ici s'affiche les lettres testées qui ne sont pas dans le mot</p>
+		<canvas id="canvas" width="200px" height="200px"></canvas>
 	</main>
 	<script type="text/javascript" src="myFunctions.js"></script>
 </body>
