@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="pendu.css">
 </head>
 <body>
-	<img id="imgsource" src="imagetest.jpg" hidden="true">
+	<img id="imgsource" src="images/imagetest.jpg" hidden="true">
 	<header>
 		<nav>
 			<button onclick="resetGame()">Recommencer la partie</button>
