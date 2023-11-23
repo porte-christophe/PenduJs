@@ -6,12 +6,20 @@
 	<link rel="stylesheet" type="text/css" href="pendu.css">
 </head>
 <body>
-	<img id="imgsource" src="images/imagetest.jpg" hidden="true">
+	<img id="imgsource" src="" hidden="true">
 	<header>
 		<nav>
 			<button onclick="resetGame()">Recommencer la partie</button>
 			<input type="text" id="inp1" name="motADeviner" placeholder="entrer ici le mot à deviner (sans accent)">
-			<button onclick="initGame()" id="initGame">Lancer la partie</button>
+			<select id="styledemort">
+				<option value="0" selected>choisir</option>
+				<option value="pendu.jpg">pendu</option>
+				<option value="buchet.jpg">buchet</option>
+				<option value="guillotine.jpg">guillotine</option>
+				<option value="dalek.jpg">Spéciale 23-11</option>
+				<option value="imagetest.jpg">Falling ball</option>
+			</select>
+			<button onclick="initGame()" id="initGame" disabled="true">Lancer la partie</button>
 		</nav>
 	</header>
 	<p id="afficheMotDeviner">Ici s'affiche le mot deviner.</p>
