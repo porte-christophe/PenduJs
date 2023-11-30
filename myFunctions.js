@@ -31,6 +31,7 @@ function resetGame(){
 	document.getElementsByName("motADeviner")["0"].value=null;
 	document.getElementsByName("lettreATester")["0"].value=null;
 	document.getElementById("styledemort").value="0";
+	document.getElementById("initGame").disabled = true;
 	image.width=0;
 	essais = 0;
 	imagecursor = 0;

@@ -1,4 +1,11 @@
+body{
+	margin: unset;
+	background-image: url("imagesbrute/fond.jpg");
+	display: flex;
+	flex-direction: column;
+}
 nav{
+	margin: 5%;
 	display: flex;
 	justify-content: space-between;
 }
@@ -9,4 +16,10 @@ input#inp1 {
 
 p{
 	font-size: 28px;
+	background-color: salmon;
+	border-radius: 5px;
+	width: fit-content;
+}
+p#afficheMotDeviner{
+	align-self: center;
 }

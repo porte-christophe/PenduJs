@@ -22,7 +22,7 @@
 			<button onclick="initGame()" id="initGame" disabled="true">Lancer la partie</button>
 		</nav>
 	</header>
-	<p id="afficheMotDeviner">Ici s'affiche le mot deviner.</p>
+	<p id="afficheMotDeviner">Ici s'affiche les tirets (-).</p>
 	<main id="jeu" hidden="true">
 		<input type="text" id="lat" name="lettreATester" minlength="1" maxlength="1" placeholder="entrer ici la lettre à tester">
 		<button onclick="testerLaLettre()">Tester la lettre</button>
