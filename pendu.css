@@ -23,3 +23,8 @@ p{
 p#afficheMotDeviner{
 	align-self: center;
 }
+main#jeu{
+	visibility: hidden;
+	display: flex;
+	justify-content: center;
+}

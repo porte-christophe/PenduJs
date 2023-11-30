@@ -23,7 +23,7 @@
 		</nav>
 	</header>
 	<p id="afficheMotDeviner">Ici s'affiche les tirets (-).</p>
-	<main id="jeu" hidden="true">
+	<main id="jeu">
 		<input type="text" id="lat" name="lettreATester" minlength="1" maxlength="1" placeholder="entrer ici la lettre à tester">
 		<button onclick="testerLaLettre()">Tester la lettre</button>
 		<p id="mauvaisesLettres">Ici s'affiche les lettres testées qui ne sont pas dans le mot</p>

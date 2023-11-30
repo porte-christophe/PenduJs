@@ -32,6 +32,7 @@ function resetGame(){
 	document.getElementsByName("lettreATester")["0"].value=null;
 	document.getElementById("styledemort").value="0";
 	document.getElementById("initGame").disabled = true;
+	document.getElementById("jeu").style.visibility = "hidden"
 	image.width=0;
 	essais = 0;
 	imagecursor = 0;
@@ -44,6 +45,7 @@ function initialisation(){
 	return motDeviner;
 }
 function initGame(){
+	document.getElementById("jeu").style.visibility = "visible";
 	motADeviner = document.getElementsByName("motADeviner")["0"].value.toUpperCase();
 	longeur = motADeviner.length;
 	if (motADeviner!="") {
